@@ -13,4 +13,4 @@ tic tac toe on python for scm project.
 10. resolved error in the new code.
 11. created conditions for winning.
 12. resolved error in winning condition.
-13. 
+13. created the main code(heart of the game)
