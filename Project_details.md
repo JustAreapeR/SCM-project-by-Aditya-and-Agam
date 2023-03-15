@@ -10,5 +10,7 @@ tic tac toe on python for scm project.
 7. getting hard to fix. Therefore we decided to trash the current code.
 8. NEW START
 9. created a board with a dedicated path in mind.
-10. resolved error in the new code 
-11. created conditions for winning
+10. resolved error in the new code.
+11. created conditions for winning.
+12. resolved error in winning condition.
+13. 
