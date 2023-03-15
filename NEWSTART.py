@@ -34,6 +34,11 @@ def check_for_Win(Player_1, Player_2):
 Player_1 = [0, 0, 0, 0, 0, 0, 0, 0, 0]
 Player_2 = [0, 0, 0, 0, 0, 0, 0, 0, 0]
 turn = 1 # 1 for X and 0 for O
+print("WELCOME TO TIC TAC TOE")
+print("   by Aditya Bisht   ")
+print(" ")
+print("P1 will be using : X")
+print("P2 will be using : O")
 while(True):
     print_Board(Player_1, Player_2)
     if(turn == 1):
@@ -46,6 +51,8 @@ while(True):
         Player_2[b] = 1
     winner = check_for_Win(Player_1, Player_2)
     if(winner != -1):
+        print("GAME END")
+        print("THANKS FOR PLAYING THE GAME")
         break
         
     turn = 1 - turn
