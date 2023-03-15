@@ -29,3 +29,23 @@ def check_for_Win(Player_1, Player_2):
             print("P2 WINS")
             return 0
     return - 1
+
+#main code
+Player_1 = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+Player_2 = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+turn = 1 # 1 for X and 0 for O
+while(True):
+    print_Board(Player_1, Player_2)
+    if(turn == 1):
+        print("P1's Turn")
+        a = int(input("ENTER POSITION: "))
+        Player_1[a] = 1
+    else:
+        print("P2's Turn")
+        b = int(input("ENTER POSITION: "))
+        Player_2[b] = 1
+    winner = check_for_Win(Player_1, Player_2)
+    if(winner != -1):
+        break
+        
+    turn = 1 - turn
