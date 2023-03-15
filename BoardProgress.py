@@ -28,3 +28,36 @@ def print_instructions():
     print("-> press S to start the game")
     flag = input()    
     return flag
+
+# for start the game
+def startgame():
+    turn = 0
+    for i in range(9):
+        if turn % 2 == 0:
+            print("\nthis is ur turn",players[0])
+            p = int(input("Please Enter postion : "))
+            v = 'x'
+            pos[p] = v
+            print_board(pos)
+            winner = checkwin(v)
+            if winner is "nobody":
+                turn = 1
+                continue
+            else:
+                print("\n\nHurray !!,",players[0],"you win ♥♥")
+                break
+        else:
+            print("\nthis is ur turn",players[1])
+            p = int(input("Please Enter postion : "))
+            v = '0'
+            pos[p] = v
+            print_board(pos)
+            winner = checkwin(v)
+            if winner is "nobody":
+                turn = 0
+                continue
+            else:
+                print("\n\nHurray !!,",players[1],"you win ♥♥")    
+                break
+    else:
+        print("\n\nGame is Tie")
