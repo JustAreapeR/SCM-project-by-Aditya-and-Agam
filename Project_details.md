@@ -1,5 +1,7 @@
 # SCM-project-by-Aditya-and-Agam
-tic tac toe on python for scm project.
+# tic tac toe on python for scm project.
+# Summary of the whole whole work done by both.
+
 
 1. created first board type. (Agam)
 2. created and update version of board type. (Agam)
